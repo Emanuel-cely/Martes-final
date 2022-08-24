@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form id="dataform" method="post" action="/backend/receive.php">
+        <fieldset> 
+            <label form="name"> Nombre:</label>
+            <input type="text" 
+            id="name"
+            name="name"
+            placeholder="Introducir nombre"
+            minlength="3"
+            maxlength="50"
+            title="Introducir al menos 3 caracteres maximo 50"
+            tabindex="0"
+            autofocus="true"
+            autocomplete="off"
+            required>
+            <br><br>
+            <select id="typeDocument" name="typeDocument">
+                <option value="nada" selected="selected">Seleccione un tipo de documento</option>
+                <option value="cc">Cedula de identidad</option>
+                <option value="ti">Targeta de identidad</option>
+                <option value="ce">Cedula de estranjeria</option>
+            </select>
+            <label for="document"> No documento:</label>
+            <input type="number" id="document" name="document" placeholder="Introducir documento de identidad"
+            min="2" max="1090" tabindex="1">
+            <label for="estado civil">Estado Civil</label>
+            <input type="radio" name="eCivil" id="eCivil" value="soltero">Soltero
+            <input type="radio" name="eCivil" id="eCivil" value="casado">Casado
+            <input type="radio" name="eCivil" id="eCivil" value="divorciado">Divorciado
+            <input type="radio" name="eCivil" id="eCivil" value="viudo">Viudo
+        </fieldset>  
+        <fieldset><legend>Informacion de estudio y otros</legend>
+            <label for="colores">Color favorito</label>
+            <input type="color" id="colores">
+            <label for="dateInsc">Fecha de inscripcion</label>
+            <input type="date" id="dateInsc">
+            <label for="file" name="file" id="documentFile"></label>
+            <input type="">
+            <label for="startTime">Hora</label>
+            <input type="time" id="startTime">
+            <input type="range" min="5" max="10" step="0.01">
+            <label for="telNo">Telefono</label>
+            <input id="telNo" name="telNo" type="tel" size="20">
+            <label for="week">Semana</label>
+            <input id="week" type="week" name="week">
+            <input id="myURL" name="myURL" type="url">
+            <br>
+            <label>Objeto favorito</label>
+            <input list="objetofavorito">
+            <datalist id="objetofavorito">
+                <option value="Casa">
+                <option value="Carro">
+                <option value="Moto">
+                <option value="Avion">
+            </datalist>
+            <label for="lenguajes">Lenguajes de programacion</label>
+        <select id="lenguajes" name="lenguajes">
+            <optgroup label="lenguajes tipados">
+                <option value="java">java</option>
+                <option value="cSharp">c#</option>
+                <option value="c">c++</option>
+            </optgroup>
+            <optgroup label="lenguajes no tipados">
+                <option value="python">python</option>
+                <option value="JavaScript">JavaScript</option>
+            </optgroup>
+        </select><br>
+        <br>
+            <form>
+                <div>
+                  <label for="title">Comentario:</label>
+                  <input type="text" id="title" name="title" value="Nombre">
+                </div>
+                <div>
+                  <label for="content"></label>
+                  <textarea id="content" name="content" cols="60" rows="5">
+                  </textarea>
+                </div>
+                <div>
+                  <button type="submit">Cargar comentario</button>
+                </div>
+                <input type="hidden" id="postId" name="postId" value="34657">
+              </form><br><br>
+              <input type="reset" value="Restablecer formulario">
+        <hr>
+        <label for="acepta">Aceptar terminos</label>
+        <input type="checkbox" id="terminos">
+        <hr>
+        <input type="submit" value="Envio de datos"><!--pho-->
+        <button id="validar">Validar</button><!--JS-->
+
+        
+    </form>
+    <script src="./scrips/main.js"></script>
+</body>
+</html>

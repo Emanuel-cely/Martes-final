@@ -1,0 +1,29 @@
+.container{
+    width: auto;
+    height: auto;
+}
+img{
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: auto;
+    border: 2px solid red;
+}
+h2{
+    text-align: center;
+    display: block black;
+    height: auto;
+}
+body{
+    background-color: rgba(48, 187, 129, 0.808);
+    margin: 2.5cm;
+}
+figcaption{
+    text-align: center;
+}
+footer{
+    text-align: center;
+}
+div{
+    text-align: left;
+}

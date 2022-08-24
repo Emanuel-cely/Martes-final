@@ -1,0 +1,17 @@
+table{
+    margin: 0 auto;
+    text-align: center;
+    border: px solid black;
+    border-radius: 10px ;
+}
+thead tr, td, th, caption{
+    background-color: rgba(255, 166, 0, 0.514);
+    border: 2px solid black;
+    border-radius: 10px ;
+}
+thead, tbody{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}

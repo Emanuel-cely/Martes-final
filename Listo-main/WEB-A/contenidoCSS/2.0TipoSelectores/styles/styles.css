@@ -1,0 +1,82 @@
+/**
+1. Selector por etiqueta: Cambia el estilo a todas las etiquetas en cuestion, se coloca directamente el nombre de la etiqueta.
+2. Selector por clase: Cambia o modifica el estilo del elemento en donde se mencione la clase.Para crear un estilo por clase se coloca .nombreEstilo.
+3. Selector por identificador por id: Modifica el estilo del elemnto que posea el id
+4. Selector universal *
+*/
+/************************************************************/
+
+/*1. Por etiqueta */
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    background-color: red;
+}
+/*2. Selector por clase*/
+.subtitulo{
+    text-align: center;
+    color: red;
+    background-color: black;
+}
+/*3. Por el id*/
+#info{
+    border-radius: 5px;
+    background-color: aquamarine;
+    color: blueviolet;
+    padding: 10px;
+}
+
+
+/*Combinadores*/
+
+a[href]{
+    text-align: center;
+    margin-left: 2px;
+    color: royalblue;
+}
+
+/*Utilizando sufijos*/ 
+a[href$=".com"]{
+    margin-left: 4%;
+    color: brown;
+}
+a[href$=".org"]{
+    margin-left: 4%;
+    color: brown;
+}
+
+/*Utilizando prefijos*/
+[class^="as"]{
+    font-size: 25px;
+}
+/*1*/
+section>p { background: blue; }
+
+section p+p { background: yellow; }
+/*2*/
+.asideTitle{
+    background-color: aqua;
+}
+/*3*/
+#winning {
+    background-color: rgb(11, 238, 11);
+    border: 1px solid rgb(0, 0, 0);
+}
+/*4*/  
+.better {
+    background-color: gray;
+    border: none !important;
+}
+/*5*/
+li > div {
+    color: white;
+    background: blue;
+}
+ul > li {
+    color: blue;
+}
+/*6*/
+ul > li {
+    color: white;
+    background: blue;
+}
